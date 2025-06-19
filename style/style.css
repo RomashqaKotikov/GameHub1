@@ -623,9 +623,7 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    header{
-        display: block;
-    }
+    
     .hero {
         flex-direction: column;
         text-align: center;
@@ -645,11 +643,43 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 @media (max-width: 768px) {
+    /* Mobile Header Behavior */
+@media (max-width: 768px) {
     .glass-nav {
-        flex-direction: column;
-        gap: 1.5rem;
-        padding: 1.5rem 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(0);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
     }
+    
+    .glass-nav.hidden {
+        transform: translateY(-100%);
+    }
+    
+    /* Уменьшаем padding для мобильных */
+    .glass-nav {
+        padding: 0.8rem 5%;
+    }
+    
+    /* Делаем лого и кнопки меньше */
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .user-actions .login-btn {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .search-btn, .cart-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
     
     nav ul {
         flex-wrap: wrap;
