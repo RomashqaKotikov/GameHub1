@@ -114,3 +114,29 @@ function initBackToTop() {
 
 // Инициализация кнопки "Наверх"
 initBackToTop();
+
+// Mobile Header Hide/Show on Scroll
+function initMobileHeader() {
+    const header = document.querySelector('.glass-nav');
+    let lastScrollY = window.scrollY;
+    const mobileBreakpoint = 768;
+    
+    window.addEventListener('scroll', function() {
+        if (window.innerWidth > mobileBreakpoint) return;
+        
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            // Скролл вниз - скрываем header
+            header.classList.add('hidden');
+        } else if (currentScrollY < lastScrollY || currentScrollY < 100) {
+            // Скролл вверх или вверху страницы - показываем header
+            header.classList.remove('hidden');
+        }
+        
+        lastScrollY = currentScrollY;
+    });
+}
+
+// Инициализация поведения header на мобильных
+initMobileHeader();
