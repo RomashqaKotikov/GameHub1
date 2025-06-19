@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Магазин игр</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/ico.png" type="image/x-icon">
+</head>
+<body>
+    <div class="blur-bg"></div>
+    
+    <header class="glass-nav">
+        <div class="logo">
+            <i class="fas fa-gamepad"></i>
+            <span>GameHub</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="#featured-games">Популярные игры</a></li>
+                <li><a href="#deals-section">Горячие предложения</a></li>
+                <li><a href="#newsletter-section">Рассылка</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+            <button class="login-btn" id="loginBtn">Войти</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Откройте мир невероятных приключений</h1>
+                <p>Лучшие игры по лучшим ценам. Эксклюзивные предложения для наших пользователей.</p>
+                <div class="cta-buttons">
+                    <button class="primary-btn" id="primary-btn">Купить сейчас</button>
+                    <button class="secondary-btn" id="secondary-btn">Узнать больше</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/gta 6.jpg" alt="Главная игра" class="game-cover">
+                <div class="price-tag">-30%</div>
+            </div>
+        </section>
+
+        <section class="featured-games" id="featured-games">
+            <h2>Популярные игры</h2>
+            
+            <div class="games-grid">
+                <!-- Game Card 1 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="img/cyber oddyssey.jpg" alt="Название игры">
+                        <div class="platform-tags">
+                            <span class="pc-tag"><i class="fab fa-windows"></i></span>
+                            <span class="ps-tag"><i class="fab fa-playstation"></i></span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Cyber Odyssey</h3>
+                        <div class="game-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                            <span class="genre">Экшен/RPG</span>
+                        </div>
+                        <div class="game-price">
+                            <span class="current-price">$39.99</span>
+                            <span class="original-price">$59.99</span>
+                        </div>
+                        <button class="add-to-cart" id="add-to-cart1">В корзину</button>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="img/gempire.png" alt="Название игры">
+                        <div class="platform-tags">
+                            <span class="pc-tag"><i class="fab fa-windows"></i></span>
+                            <span class="xbox-tag"><i class="fab fa-xbox"></i></span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Galactic Empire</h3>
+                        <div class="game-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                            <span class="genre">Стратегия</span>
+                        </div>
+                        <div class="game-price">
+                            <span class="current-price">$29.99</span>
+                        </div>
+                        <button class="add-to-cart" id="add-to-cart2">В корзину</button>
+                    </div>
+                </div>
+
+                <!-- Game Card 3 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="img/speed legends.webp" alt="Название игры">
+                        <div class="platform-tags">
+                            <span class="pc-tag"><i class="fab fa-windows"></i></span>
+                            <span class="ps-tag"><i class="fab fa-playstation"></i></span>
+                            <span class="xbox-tag"><i class="fab fa-xbox"></i></span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Speed Legends</h3>
+                        <div class="game-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                            <span class="genre">Гонки</span>
+                        </div>
+                        <div class="game-price">
+                            <span class="current-price">$49.99</span>
+                            <span class="original-price">$69.99</span>
+                        </div>
+                        <button class="add-to-cart" id="add-to-cart3">В корзину</button>
+                    </div>
+                </div>
+
+                <!-- Game Card 4 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="img/dark forest.jpg" alt="Название игры">
+                        <div class="platform-tags">
+                            <span class="pc-tag"><i class="fab fa-windows"></i></span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Dark Forest</h3>
+                        <div class="game-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                            <span class="genre">Хоррор</span>
+                        </div>
+                        <div class="game-price">
+                            <span class="current-price">$19.99</span>
+                        </div>
+                        <button class="add-to-cart" id="add-to-cart4">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="deals-section" id="deals-section">
+            <h2>Горячие предложения</h2>
+            <div class="deals-carousel">
+                <div class="deal-card">
+                    <div class="deal-badge">-50%</div>
+                    <img src="img/Mega Bundle.jpg" alt="Акционная игра">
+                    <div class="deal-info">
+                        <h3>Mega Bundle</h3>
+                        <p>5 лучших игр года в одном наборе</p>
+                        <div class="deal-price">
+                            <span class="current-price">$49.99</span>
+                            <span class="original-price">$99.99</span>
+                        </div>
+                        <button class="deal-btn" id="deal-btn">Купить сейчас</button>
+                    </div>
+                </div>
+                
+                <div class="deal-card">
+                    <div class="deal-badge">-40%</div>
+                    <img src="img/Summer Sale.jpg" alt="Акционная игра">
+                    <div class="deal-info">
+                        <h3>Summer Sale</h3>
+                        <p>Летние скидки на 100+ игр</p>
+                        <div class="deal-price">
+                            <span class="current-price">От $9.99</span>
+                        </div>
+                        <button class="deal-btn" id="dealBtn1">Посмотреть</button>
+                    </div>
+                </div>
+                
+                <div class="deal-card">
+                    <div class="deal-badge">Бесплатно</div>
+                    <img src="img/gd.png" alt="Акционная игра">
+                    <div class="deal-info">
+                        <h3>Geometry Dash</h3>
+                        <p>Скачайте бесплатно</p>
+                        <div class="deal-price">
+                            <span class="current-price">$0.00</span>
+                            <span class="original-price">$1.99</span>
+                        </div>
+                        <button class="deal-btn" id="dealBtn2">Забрать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section" id="newsletter-section">
+            <div class="newsletter-content">
+                <h2>Подпишитесь на рассылку</h2>
+                <p>Получайте эксклюзивные предложения, новости о грядущих релизах и специальные акции прямо на вашу почту.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit" class="subscribe-btn">Подписаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 GameHub. Все права защищены.</p>
+            <div class="footer-links">
+                <a href="#">Условия использования</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Политика возвратов</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+<button id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
