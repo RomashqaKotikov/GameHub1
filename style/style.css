@@ -623,6 +623,9 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+    header{
+        display: block;
+    }
     .hero {
         flex-direction: column;
         text-align: center;
